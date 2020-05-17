@@ -1,6 +1,9 @@
 {
-  "name": "root",
+  "name": "@example/app",
   "private": true,
+  "scripts": {
+    "dev": "lerna run dev --parallel"
+  },
   "devDependencies": {
     "@nestjs/cli": "^6.13.2",
     "@nestjs/schematics": "^6.8.1",
@@ -27,9 +30,9 @@
     "typescript": "3.7.3"
   },
   "dependencies": {
-    "backend": "file:packages/backend",
-    "frontend": "file:packages/frontend",
-    "ui": "file:packages/ui"
+    "@example/backend": "file:packages/backend",
+    "@example/frontend": "file:packages/frontend",
+    "@example/ui": "file:packages/ui"
   },
   "workspaces": [
     "packages/*"

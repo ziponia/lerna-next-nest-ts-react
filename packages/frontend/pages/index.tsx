@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "ui";
+import { Button } from "@example/ui";
 import { NextPage } from "next";
 import axios from "axios";
 
@@ -11,6 +11,7 @@ const IndexPage: NextPage<Props> = (props) => {
   return (
     <div>
       <Button />
+
       <ul>
         {props.users &&
           props.users.map((user) => <li key={user.id}>{user.name}</li>)}
