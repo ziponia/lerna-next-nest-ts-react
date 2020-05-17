@@ -8,6 +8,7 @@
     "react-dom": "^16.13.1"
   },
   "scripts": {
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "tsc": "tsc"
   }
 }
